@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -19,6 +20,9 @@
                         <subviews>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y99-kP-Fqq">
                                 <rect key="frame" x="200" y="230" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="y99-kP-Fqq" secondAttribute="height" multiplier="2:1" id="djw-X3-aic"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pLt-nS-elJ"/>
@@ -26,6 +30,9 @@
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jr7-0q-jer">
                                 <rect key="frame" x="200" y="360" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Jr7-0q-jer" secondAttribute="height" multiplier="2:1" id="3gm-1o-Qpq"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KAc-34-kFF"/>
@@ -33,6 +40,9 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fos-GA-bQW">
                                 <rect key="frame" x="200" y="100" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Fos-GA-bQW" secondAttribute="height" multiplier="2:1" id="37a-Yf-64k"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="47m-ia-hJK"/>
@@ -41,11 +51,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Fos-GA-bQW" firstAttribute="height" secondItem="y99-kP-Fqq" secondAttribute="height" id="IPM-7e-Ddd"/>
                             <constraint firstItem="Jr7-0q-jer" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TVi-Lk-Dr0"/>
+                            <constraint firstItem="y99-kP-Fqq" firstAttribute="height" secondItem="Jr7-0q-jer" secondAttribute="height" id="UuR-rR-KJJ"/>
                             <constraint firstItem="Jr7-0q-jer" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="296" id="a7c-7p-pDU"/>
                             <constraint firstItem="y99-kP-Fqq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aOY-ek-UW7"/>
                             <constraint firstItem="Fos-GA-bQW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ssu-jp-N2A"/>
                             <constraint firstItem="y99-kP-Fqq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="166" id="tN3-Hj-aWD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Jr7-0q-jer" secondAttribute="bottom" constant="20" id="y2M-9x-IOe"/>
                             <constraint firstItem="Fos-GA-bQW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="zNp-mq-wtE"/>
                         </constraints>
                     </view>

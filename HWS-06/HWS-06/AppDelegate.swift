@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  HWS-05
+//  HWS-06
 //
 //  Created by Szymon Blaszczynski on 27/05/16.
 //  Copyright © 2016 Szymon Blaszczynski. All rights reserved.
@@ -9,7 +9,7 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
@@ -40,6 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+
 
 }
 
